@@ -40,6 +40,7 @@
             btnDeleteInvoice = new Button();
             dgvInvoices = new DataGridView();
             lblClientName = new Label();
+            btnGeneratePdf = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvInvoices).BeginInit();
             SuspendLayout();
             // 
@@ -155,9 +156,20 @@
             lblClientName.TabIndex = 0;
             lblClientName.Text = "Client Name: ";
             // 
+            // btnGeneratePdf
+            // 
+            btnGeneratePdf.Location = new Point(506, 159);
+            btnGeneratePdf.Name = "btnGeneratePdf";
+            btnGeneratePdf.Size = new Size(100, 26);
+            btnGeneratePdf.TabIndex = 12;
+            btnGeneratePdf.Text = "Generate PDF";
+            btnGeneratePdf.UseVisualStyleBackColor = true;
+            btnGeneratePdf.Click += btnGeneratePdf_Click;
+            // 
             // InvoiceForm
             // 
             ClientSize = new Size(721, 437);
+            Controls.Add(btnGeneratePdf);
             Controls.Add(lblClient);
             Controls.Add(cmbClients);
             Controls.Add(lblDate);
@@ -177,5 +189,6 @@
             ResumeLayout(false);
             PerformLayout();
         }
+        private Button btnGeneratePdf;
     }
 }

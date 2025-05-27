@@ -8,6 +8,6 @@ namespace ClientInvoiceGenerator.Data
 {
     public static class DbHelper
     {
-        public static readonly string ConnectionString = "Data Source=invoice.db;Version=3;";
+        public static readonly string ConnectionString = "Data Source=invoices.db;Version=3;";
     }
 }
